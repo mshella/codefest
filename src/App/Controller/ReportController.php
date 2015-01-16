@@ -14,7 +14,7 @@ class ReportController extends \Norm\Controller\NormController
 	public function mapRoute()
 	{		
 		
-		$this->map('/rpt', 'doReport')->via('GET', 'POST');
+		$this->map('/', 'doReport')->via('GET', 'POST');
 		parent:: mapRoute();
 	}
 

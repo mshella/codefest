@@ -8,7 +8,7 @@
         <meta name="author" content="Ganesha <reekoheek@gmail.com>">
         <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-        <title><?php echo @$app->theme->options['title'] ?: 'Bono Bootstrap' ?></title>
+        <title><?php echo @$app->theme->options['title'] ?: 'MHA' ?></title>
 
         <!-- Bootstrap core CSS -->
         <link href="<?php echo Theme::base('vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
@@ -48,7 +48,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo URL::base() ?>"><?php echo @$app->theme->options['title'] ?: 'Bono Bootstrap' ?></a>
+                    <a class="navbar-brand" href="<?php echo URL::base() ?>"><?php echo @$app->theme->options['title'] ?: 'MHA' ?></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -62,7 +62,7 @@
                               <a href="<?php echo URL::site('/role'); ?>">Role</a>
                             </li>
                             <li>
-                              <a href="<?php echo URL::site('/report/rpt'); ?>">Report</a>                              
+                              <a href="<?php echo URL::site('/report/doReport'); ?>">Report</a>                              
                             </li>
                             <li>
                               <a href="<?php echo URL::site('/about'); ?>">About Us

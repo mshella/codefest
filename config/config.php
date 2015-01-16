@@ -17,7 +17,7 @@ use Norm\Schema\Password;
 
 return array(
     'application' => array(
-        'title' => 'mdhct',
+        'title' => 'MHA',
         'subtitle' => 'One great application'
     ),
     'bono.salt' => 'please change this',
@@ -55,6 +55,7 @@ return array(
                 '/role'=> null,
                 '/report'=> '\\App\\Controller\\ReportController',
                 '/about'=> null,
+                '/menstruation'=> null,
             ),
         ),
         '\\Bono\\Middleware\\ContentNegotiatorMiddleware' => array(
