@@ -27,7 +27,7 @@ return array(
                 'mysql' => array(
                     'driver' => '\\Norm\\Connection\\PDOConnection',
                     'prefix' => 'mysql',
-                    'dbname' => 'mdhct',                    
+                    'dbname' => 'mha',                    
                     'username' => 'root',
                     'password' => 'password'
                     
@@ -83,7 +83,7 @@ return array(
         'class' => '\\ROH\\Theme\\BootstrapTheme',
         'overwrite' => true,
         'options' => array(
-            'title' => 'MDHCT',
+            'title' => 'MHA',
         ),
     ),
 );

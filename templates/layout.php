@@ -59,13 +59,10 @@
                             <li><a href="<?php echo URL::site('/user'); ?>"> User </a>
                             </li>
                             <li>
-                              <a href="<?php echo URL::site('/role'); ?>">Role</a>
-                            </li>
-                            <li>
                               <a href="<?php echo URL::site('/report/doReport'); ?>">Report</a>                              
                             </li>
                             <li>
-                              <a href="<?php echo URL::site('/about'); ?>">About Us
+                              <a href="<?php echo URL::site('/menstruation/null/create'); ?>">Note
                               </a>                                                
                             </li>
                             <li><a href="<?php echo URL::site('/logout') ?>">Logout</a></li>                            
