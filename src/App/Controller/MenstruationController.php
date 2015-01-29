@@ -2,22 +2,41 @@
 
 namespace App\Controller;
 
-use Norm\Norm;
+use \Norm\Norm;
 
-/**
-* author : Shella
-*/
-class MenstruationController extends \Norm\Controller\NormController
+class MenstruationController extends BaseController
+
 {
+	protected $collection;
 
-	public function mapRoute()
-	{		
+    /**
+     * [__construct description]
+     *
+     * @param [type] $app [description]
+     * @param [type] $uri [description]
+     */
+    public function __construct($app, $uri)
+    {
+        parent::__construct($app, $uri);
+
+        $this->collection = Norm::factory($this->clazz);
+    }
+
+    /**
+     * [mapRoute description]
+     *
+     * @return [type] [description]
+     */
+
+    public function mapRoute()
+    {
+
         $this->map('/null/create', 'create')->via('GET', 'POST');
-		parent:: mapRoute();
-	}
+        parent::mapRoute();
+    }
 
-	public function create()
-	{
+    public function create()
+    {
         $entry = $this->getCriteria();
 
         if ($this->request->isPost()) {
@@ -51,8 +70,5 @@ class MenstruationController extends \Norm\Controller\NormController
         }
 
         $this->data['entry'] = $entry;
-	}    
+    }
 }
-
-
-

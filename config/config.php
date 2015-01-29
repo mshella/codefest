@@ -44,6 +44,7 @@ return array(
             // 'token' => 'changetokenherebeforeenable',
         ),
         '\\App\\Provider\\AppProvider',
+        // '\\App\\Provider\\LoginProvider',
         
     ),
     'bono.middlewares' => array(
@@ -53,7 +54,7 @@ return array(
             'mapping' => array(
                 '/user' => null,
                 '/role'=> null,
-                '/report'=> '\\App\\Controller\\ReportController',
+                '/graphic'=> '\\App\\Controller\\GraphicController',
                 '/about'=> null,
                 '/menstruation'=> null,
             ),
@@ -68,9 +69,9 @@ return array(
         ),
 
         // uncomment below to enable auth
-        '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-            'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
-        ),
+        // '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+        //     'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
+        // ),
         '\\Bono\\Middleware\\NotificationMiddleware' => null,
         '\\Bono\\Middleware\\SessionMiddleware' => null,
     ),

@@ -8,6 +8,13 @@ class AppProvider extends \Bono\Provider\Provider
     {
         $app = $this->app;
 
+
+        $this->app->post(
+            '/login',
+            function () use ($app) {
+                $post = $app->request->post();
+            }
+        );
         // do something here
     }
 }

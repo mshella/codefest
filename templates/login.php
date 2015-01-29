@@ -1,20 +1,28 @@
-<div>
-   <h2>Login</h2>
-   <form method="post" role="form">
-      <div class="form-group">
-         <input type="text" name="username" placeholder="Email / Username" value="<?php echo @$entry['username'] ?>">
-      </div>
-      <div class="form-group">
-         <input type="password" name="password" placeholder="Password">
-      </div>
-       <div class="checkbox">
-         <label class="placeholder">
+<div id="login">
+   <div class="title">
+      <h2>
+         MHA
+         <br>
+         <strong>Menstruation Health Application</strong>
+      </h2>
+   </div>
+   <form method="post">
+      <div class="row">
+         <div class="span-12">
+            <input type="text" name="username" placeholder="Email / Username" value="<?php echo @$entry['username'] ?>">
+         </div>
+         <div class="span-12">
+            <input type="password" name="password" placeholder="Password">
+         </div>
+         <div class="span-12">
+            <label class="placeholder">
             <input type="checkbox" class="checkbox">
-            Keep me sign in
-         </label>
+               Keep me sign in
+            </label>
+         </div>
+         <div class="span-12">
+            <input type="submit" value="Sign In"></input>
+         </div>
       </div>
-      <p>
-         <input type="submit" value="Sign In" class="btn btn-primary"></input>
-      </p>
    </form>
 </div>
